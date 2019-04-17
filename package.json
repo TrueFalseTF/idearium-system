@@ -1,0 +1,31 @@
+{
+  "name": "idearium-system",
+  "version": "1.0.0",
+  "description": "Notes service",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrueFalseTF/idearium-system.git"
+  },
+  "keywords": [
+    "notes",
+    "crazy",
+    "coding"
+  ],
+  "author": "Сергей Лебедев и Дмитрий Петренко",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TrueFalseTF/idearium-system/issues"
+  },
+  "homepage": "https://github.com/TrueFalseTF/idearium-system#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
