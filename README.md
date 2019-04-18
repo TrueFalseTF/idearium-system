@@ -1,1 +1,0 @@
-# ideator-system
