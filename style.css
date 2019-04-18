@@ -1,0 +1,335 @@
+*{
+    margin:0 ;  
+    padding: 0;
+}  
+body{
+    font-family: 'Open Sans', sans-serif;
+}  
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}  
+header{
+    width: 100%;
+    background: #000;
+    display: flex;
+}  
+.header_logo{
+    text-transform: uppercase;/*ZAGLAVNYE BUKVY*/  
+    color: #ffffff ;
+    font-weight: 800;
+    font-size: 24px;
+    cursor: pointer;  /*FORMA KURSORA - RUKOY*/
+    margin-top: 56px;  
+    margin-left: 12%;
+}  
+nav{
+    margin-top: 56px;
+    margin-left: 29%;
+}  
+.topnav a{/*dlya  ssylok*/
+    color: #ffffff;  
+    text-align: center;  
+    padding: 12px 16px;/*OTSTUP DO ZHELTOY CHERTY 12PX A S BOKU DO TEXTA 16PX*/
+    font-size: 14px;
+    font-weight: bold;/*zhyrny tsvet*/  
+}  
+.topnav a:hover{/*hover effekt dlya  ssylok*/
+    border-bottom: 3px solid #fcac45;
+}  
+.topnav .icon{
+    display: none;/*UBRALSYA MENU BURGER*/
+}  
+  
+main{
+    display:flex;/*Ctobw mw rabotali dly  
+    a togo ctobw mw rabotali s flex-box'sami*/
+    flex-direction: column;/*Napravlenie flex-blokov v kolonku*/  
+    width: 100%;
+}
+main .main_welcome{
+    background:url(img/hand.png) no-repeat;
+    text-align: center;  
+    padding: 200px 0 410px 0;
+}
+main .main_welcome p{
+    color: #000000;  
+    font-size:20px;
+}
+main .main_welcome h1{
+    color: #000000;  
+    font-size:44px;
+    text-decoration:none;
+}
+.light_text{
+    font-weight:400;/*tonkij text*/
+}
+.mycompany{
+    color: #fcac45;  
+    font-weight: 700;
+}  
+main .main_welcome h1:after {
+    display: none;/*ubiraet podcherkivanie*/
+}  
+
+.wrapper{
+    width: 76%;  
+    margin: 0 auto;
+}
+main .main_about{
+    display: flex;/*text i kartinka s leva i prava vstali*/  
+    padding: 100px 0 100px 0;
+}
+.about_right{
+    margin-left: 175px;
+}
+.about_right h1{
+    display: inline-block;
+    border-bottom: 3px solid  #fcac45;  
+    padding-bottom: 20px;
+}    
+
+.about_right h1::after{/*uberaet podcherkivanie*/  
+    display: none;  
+}
+.about_right p{
+    margin: 30px 0 50px 0;  
+    color: #909090;
+}    
+.about_right li{
+    background: #dddcdc 0px no-repeat;
+    padding-left: 25px;  
+    margin-top: 10px;
+    color: #5a5a5a;
+}    
+.mw-100{
+    min-width: 100%;
+}
+  
+
+
+  
+.services_cards{
+    text-align: center;  
+    display: grid;  /*podklyuchaet grid*/
+    grid-template-columns: auto auto auto auto;/*zadayot stili kolonok-4 auto*/
+    grid-column-gap: 20px;/*razmer mezhdu kolonkami*/
+}
+.main_services h1{
+    text-align: center;  
+    padding: 100px 0 30px 0;
+}
+.main_services p{
+    color: #9b9b9b;  
+    margin-bottom: 100px;
+}
+.services_cards h4{
+    margin-top: 20px;  
+    margin-bottom: 15px; 
+}  
+ 
+  
+
+  
+.main_work{
+    text-align: center;
+    padding: 100px 0 100px 0;  
+}
+.main_work h1{
+    margin-bottom: 30px;
+}
+.main_work p{
+    margin-bottom: 175px;
+    color: #6c6c6c;
+}  
+.main_work img:hover{/*menyaet prozrachnostj*/
+ opacity: 0.9;
+}
+
+.center{
+    width: 76%;  
+    margin: 0 auto;
+    text-align: center; 
+}
+
+
+form p{
+    text-align: left;    
+}
+
+input{/*pole vvoda?*/
+    width: 360px;
+    height: 40px;
+    margin-bottom: 30px;  
+    font-size: 20px;
+}    
+
+
+.button_block{ 
+    display: flex;
+    justify-content: flex-end;/*knopka sprava*/   
+} 
+input[type=submit] {/*stili knopki*/ 
+    width: 165px;
+    height: 40px;  
+    background: #fcac45;  
+    color: #fff;  
+    margin-right: 0;  
+    margin-top: 20px;
+}  
+  
+
+footer{
+    width:100%;  
+    height: auto;  
+    background: #6c6c6c;  
+    padding: 30px 0 30px 0;
+}
+.social{
+    display: flex;
+    justify-content: center;/*centriruet*/
+}  
+.social img{
+    margin-left: 12px;
+}  
+.social img:hover{
+    opacity: 0.9;
+} 
+
+@media screen and (max-width:1200px){
+    nav{
+        margin-left: 20%;
+    }    
+@media screen and (max-width:1105px){
+    nav{
+        margin-left: 10%;
+    }  
+
+@media screen and (max-width:1010px){
+    .topnav a{/*skryvaet  ssylki*/
+        display: none;
+    }  
+    .topnav a.icon{ /*POYAVLYAETSYA MENU BURGER*/ 
+        float: right;  
+        margin-top: -17px;/* etor zhnacok malenykiy i ego nuzhno vyravnivat'*/  
+        display: block;
+        color: #fff;  
+        font-size: 25px;/*ikonka uvelicilas'*/
+    }  
+    nav{
+        width: 100%;  /*ikonka v pravo*/
+    }  
+    .topnav.responsive{
+        position: relative;  
+        top:50px;  
+        left:-200px;
+    }  
+    header .topnav.responsive{
+        height:340px;
+    }  
+    .topnav.responsive a.icon{
+        position: absolute;  
+        top:-50px;  
+        right:-200px;
+    }    
+    .topnav.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }    
+    label.required:after
+    {
+        color: red;
+        content: " *";
+    }
+      
+    main .main_welcome{
+        padding: 50px 0 50px 0;
+    }  
+    main .main_welcome p{
+        font-size: 14px;
+    }  
+    main .main_welcome h1{
+        font-size: 25px;
+    }    
+    main .main_welcome h1:after{
+        display: none;
+    }
+    .mw-100{
+        max-width: 100%;
+    }  
+    .main_about{
+        flex-direction: column;/* vsyo poydiot vertikalno*/ 
+    }  
+    .about_right{
+        text-align: center;  
+        margin-left: 0;
+    }  
+    .about_right li{
+        text-align: left;
+    }  
+    .about_right h1{
+        font-size: 20px;  
+        margin-top: 10px;
+    }  
+      
+      
+    .team_cards{
+       flex-direction:column /*stanovyatsa v kolonku*/
+    }
+    .services_cards{
+        grid-template-columns: auto;/*auto ikonki v 1 kolonku*/
+    }    
+}
+
+
+.register{
+    min-height: calc(85vh - 100px);
+    width: 100%;
+    border-bottom: solid #000 5px;
+}
+
+
+
+
+
+footer{
+    text-align: center;  
+    display: grid;  /*podklyuchaet grid*/
+    grid-template-columns: auto auto auto auto;/*zadayot stili kolonok-4 auto*/
+    grid-column-gap: 20px;/*razmer mezhdu kolonkami*/
+}
+.footer_column{
+    color: #9b9b9b;  
+    margin-bottom: 100px;
+}
+footer a{
+    background-color:rgba(82, 75, 75, 0.685);
+    height: 100px; width:100%;
+    margin-bottom: 100px;
+    background-color: #5a5a5a;
+    color: #000 !important;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer_column h4{
+    margin-top: 20px;  
+    margin-bottom: 15px; 
+}  
+
+
+.footer ul{
+padding: 10px 10px 20px 10px; 
+border: solid 1px black;
+background-color:rgb(78, 79, 109);
+min-height: 320px;
+width: 140px;
+margin-left: 10px;
+border: solid 5px rgb(116, 6, 6);
+}  
+footer li {
+    list-style-type: none; 
+   }
