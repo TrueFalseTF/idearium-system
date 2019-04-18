@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IDEARIUM</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header_logo">
+            <p>KoalaNote</p>
+        </div>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="#">Возможности</a>
+                <a href="#">Блог</a>
+                <a href="#">FAQ</a>
+                <a href="#">Войти</a>
+                <a href="#register">Регистрация</a>
+                <a href="#" id="menu" class="icon">&#9776;</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main_welcome">
+            <h1><span class="light_text">Добро пожаловать на веб-сервис </span><span
+                    class="mycompany">KoalaNote</span></h1>
+            <p>Самый простой способ вести заметки. Легкий, чистый и бесплатный. IDEARIUM теперь доступен в
+                Интернете.</p>
+        </div>
+
+        <div class="wrapper">
+            <div class="main_about">
+                <div class="about_left">
+                    <img class="mw-100" src="img/mac.png" alt="mac" width="400px">
+                </div>
+                <div class="about_right">
+                    <h1><span class="light_text">Что делает </span>KoalaNote <span class="light_text">лучшим?</span>
+                    </h1>
+                    <p>Простой сервис заметок, доступ к которым Вы можете получить в любое время и в любом месте.
+                    </p>
+                    <ul>
+                        <li>Единое место для ваших заметок, идей, списков и напоминаний.</li>
+                        <li>Подсветка кода. Сохраняйте фрагменты кода, чтобы иметь к ним доступ в любое время и в
+                            любом месте.</li>
+                        <li>Это бесплатно. Резервное копирование, синхронизация, обмен - все это совершенно
+                            бесплатно.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_services">
+            <div class="wrapper">
+                <h1>Другие возможности</h1>
+                <div class="line"></div>
+                <p><i>Поделитемь списком, опубликуйте свои идеи или заметки в сеть Интернет.</p></i></p>
+                <div class="services_cards">
+                    <div class="services_card">
+                        <img src="img/maps.png" alt="">
+                        <h4>История заметок</h4>
+                        <p>Ваши заметки копируются, когда вы меняете их. Просто перетащите ползунок версии, чтобы
+                            вернуться к другой версии.</p>
+                    </div>
+                    <div class="services_card">
+                        <img src="img/maps.png" alt="">
+                        <h4>Доступность</h4>
+                        <p>Ваши заметки обновляются на всех ваших устройствах. Нет кнопок для нажатия. Это просто
+                            работает.
+
+                        </p>
+                    </div>
+                    <div class="services_card">
+                        <img src="img/maps.png" alt="">
+                        <h4>Удобный список дел</h4>
+                        <p>Создавайте задачи в каждой заметке и держите их выполнение под своим контролем.</p>
+                    </div>
+                    <div class="services_card">
+                        <img src="img/maps.png" alt="">
+                        <h4>Вывод</h4>
+                        <p>Существует множество других программ для заметок, но вместо того, чтобы упрощать жизнь,
+                            они только сковывают вас ненужными обязательствами. Мой рабочий стол возможно и
+                            неорганизован, но он работает.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="register">
+            <div class="wrapper">
+                <p><a name="register"></a></p>
+                <h2>Регистрация аккаунта</h2>
+                <form method="post" action="/login/">
+                    <table>
+                        <tr>
+                            <td><label for="name">Никнейм</label></td>
+                            <td><input id="name" type="name" class="menu" placeholder=" Иван" required><span></span>*не
+                                менее 5 символов<br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="login">Логин</label></td>
+                            <td><input id="login" type="name" class="menu" placeholder=" example"
+                                    required><span></span>*совпадает с логином почты<br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="mail">Эл. почта</label></td>
+                            <td><input id="mail" type="email" class="menu" placeholder=" example@gmail.com"
+                                    required><span></span><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">Пароль</label></td>
+                            <td><input id="password" type="password" class="menu" pattern="[0-9]{7,}" required
+                                    placeholder=" Введите пароль"><span></span>*не менее 5 символов<br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">Повторите</label></td>
+                            <td><input ud="password" type="password" class="menu" placeholder=" Повторите пароль"
+                                    required pattern="[0-9]{7,}"><span></span><br></td>
+                        </tr>
+                        <tr>
+                            <td><input class="full-width has-padding" type="submit" value="Создать аккаунт">
+                            <td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+            <div class="wrapper">
+                <div class="services_cards">
+                    <div class="footer_column col1">
+                        <img src="img/logo.png" alt="">
+                        <h4>Все права защищены @2019 copyright</h4>
+                        <ul>
+                            <li>
+                                <p>Мы в соц. сетях</p>
+                            </li>
+                            <li><a href="#"><img src="img/google.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/google.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_column col2">
+                        <h4>О нас</h4>
+                        <ul>
+                            <li><a href="#">Команда</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Блог</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_column col2">
+                        <h4>Помощь и поддержка</h4>
+                        <ul>
+                            <li><a href="#">История версий</a></li>
+                            <li><a href="#">Лицензионное соглашение</a></li>
+                            <li><a href="#">Политика конфеденциальности</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"> </script>
+</body>
+
+</html>
