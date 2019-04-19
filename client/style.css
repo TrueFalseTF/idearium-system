@@ -205,11 +205,14 @@ footer{
 @media screen and (max-width:1200px){
     nav{
         margin-left: 20%;
-    }    
+    }
+}
+    
 @media screen and (max-width:1105px){
     nav{
         margin-left: 10%;
-    }  
+    }
+}  
 
 @media screen and (max-width:1010px){
     .topnav a{/*skryvaet  ssylki*/
