@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ColibriNote</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header_logo">
+            <p>ColibriNote</p>
+        </div>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="#">Возможности</a>
+                <a href="#">Блог</a>
+                <a href="#">FAQ</a>
+                <a href="#">Войти</a>
+                <a href="#register">Регистрация</a>
+                <a href="#" id="menu" class="icon">&#9776;</a>
+            </div>
+        </nav>
+    </header>
+    
+            <div class="wrapper">
+                <p><a name="register"></a></p>
+                <h2>Вход в аккаунт</h2>
+                <form method="post" action="/login/">
+                    <table class="registration_form">
+                        <tr>
+                            <td><label for="login">Логин</label></td>
+                            <td><input id="login" type="name" class="menu" placeholder=" example"
+                                    required><span></span>*совпадает с логином почты<br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="mail">Эл. почта</label></td>
+                            <td><input id="mail" type="email" class="menu" placeholder=" example@gmail.com"
+                                    required><span></span><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">Пароль</label></td>
+                            <td><input id="password" type="password" class="menu" pattern="[0-9]{7,}" required
+                                    placeholder=" Введите пароль"><span></span>*не менее 5 символов<br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">Повторите</label></td>
+                            <td><input ud="password" type="password" class="menu" placeholder=" Повторите пароль"
+                                    required pattern="[0-9]{7,}"><span></span><br></td>
+                        </tr>
+                        <tr>
+                            <td><input class="full-width has-padding" type="submit" value="Войти в аккаунт">
+                            <td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        
+    </main>
+    <footer>
+            <div class="wrapper">
+                <div class="footer_cards">
+                    <div class="footer_column col1">
+                        <img src="img/logo.png" alt="">
+                        <h4>Все права защищены @2019 copyright</h4>
+                        <ul>
+                            <li>
+                                <p>Мы в соц. сетях</p>
+                            </li>
+                            <li><a href="#"><img src="img/google.png" alt=""></a> 
+                                <a href="#"><img src="img/facebook.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_column col2">
+                        <h4>О нас</h4>
+                        <ul>
+                            <li><a href="#">Команда</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Блог</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_column col2">
+                        <h4>Помощь и поддержка</h4>
+                        <ul>
+                            <li><a href="#">История версий</a></li>
+                            <li><a href="#">Лицензионное соглашение</a></li>
+                            <li><a href="#">Политика конфеденциальности</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"> </script>
+</body>
+
+</html>
