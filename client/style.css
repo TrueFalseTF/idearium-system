@@ -161,7 +161,9 @@ main .main_about{
 
 .register{
     width: 100%;
-    border-bottom: solid #000 5px;
+}
+.register h2{
+   margin-left: 100px;
 }
 form p{
     text-align: left;    
@@ -181,7 +183,6 @@ input{
 
 
 .button_block{ 
-    display: flex;
     justify-content: flex-end;
 } 
 input[type=submit] {
@@ -308,10 +309,6 @@ footer{
         margin-top: 10px;
     }  
       
-      
-    .team_cards{
-       flex-direction:column;
-    }
     .services_cards{
         grid-template-columns: auto;
     }    
