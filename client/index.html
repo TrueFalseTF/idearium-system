@@ -90,41 +90,42 @@
             </div>
         </div>
 
-        <div class="register">
+        
             <div class="wrapper">
+                <div class="register">
                 <p><a name="register"></a></p>
                 <h2>Регистрация аккаунта</h2>
                 <form method="post" action="/login/">
                     <table class="registration_form">
-                        <tr>
-                            <td><label for="name">Никнейм</label></td>
-                            <td><input id="name" type="name" class="menu" placeholder=" Иван" required><span></span>*не
-                                менее 5 символов<br></td>
-                        </tr>
-                        <tr>
-                            <td><label for="login">Логин</label></td>
-                            <td><input id="login" type="name" class="menu" placeholder=" example"
-                                    required><span></span>*совпадает с логином почты<br></td>
-                        </tr>
-                        <tr>
-                            <td><label for="mail">Эл. почта</label></td>
-                            <td><input id="mail" type="email" class="menu" placeholder=" example@gmail.com"
-                                    required><span></span><br></td>
-                        </tr>
-                        <tr>
-                            <td><label for="password">Пароль</label></td>
-                            <td><input id="password" type="password" class="menu" pattern="[0-9]{7,}" required
-                                    placeholder=" Введите пароль"><span></span>*не менее 5 символов<br></td>
-                        </tr>
-                        <tr>
-                            <td><label for="password">Повторите</label></td>
-                            <td><input ud="password" type="password" class="menu" placeholder=" Повторите пароль"
-                                    required pattern="[0-9]{7,}"><span></span><br></td>
-                        </tr>
-                        <tr>
-                            <td><input class="button_block" type="submit" value="Создать аккаунт">
-                            <td>
-                        </tr>
+                            <tr>
+                                    <td><label for="name">Никнейм</label></td>
+                                    <td><input id="name" type="name" class="menu" placeholder=" Иван" required><br>
+                                        <label for="name">*не менее 5 символов</label></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="login">Логин</label></td>
+                                    <td><input id="login" type="name" class="menu" placeholder=" example" required><br>
+                                        <label for="login">*совпадает с логином почты</label></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="mail">Эл. почта</label></td>
+                                    <td><input id="mail" type="email" class="menu" placeholder=" example@gmail.com"
+                                            required></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="password">Пароль</label></td>
+                                    <td><input id="password" type="password" class="menu" pattern="[0-9]{7,}" required placeholder=" Введите пароль"><br>
+                                        <label for="password">*не менее 5 символов</label></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="password">Повторите</label></td>
+                                    <td><input ud="password" type="password" class="menu" placeholder=" Повторите пароль"
+                                            required pattern="[0-9]{7,}"></label></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="button_block" type="submit" value="Создать аккаунт">
+                                    <td>
+                                </tr>
                     </table>
                 </form>
             </div>
